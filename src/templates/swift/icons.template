@@ -43,13 +43,4 @@ public enum IconImage: String, CaseIterable
 public class Image
 {
 <%= imageDefinition %>
-
-#if DEBUG
-public static let allIcons: [UIImage] = [
-<%= allIcons %>
-]
-public static let allIconsNames: [String] = [
-<%= allIconsNames %>
-]
-#endif
 }

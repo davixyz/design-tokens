@@ -48,7 +48,7 @@ StyleDictionary.registerAction({
   name: 'copy_icons_ios',
   do(dictionary, config) {
     log('Copying icons directory');
-    const assetsPath = path.join(__dirname, 'assets/icons/svg');
+    const assetsPath = path.join(__dirname, 'assets/icons/');
     const assetPathArr = fs
       .readdirSync(assetsPath)
       // remove garbage hack
@@ -117,7 +117,7 @@ StyleDictionary.registerAction({
   name: 'copy_icons_android',
   do(dictionary, config) {
     log('Copying icons directory');
-    const assetsPath = path.join(__dirname, 'assets/icons/svg/');
+    const assetsPath = path.join(__dirname, 'assets/icons/');
     const assetPathArr = fs
       .readdirSync(assetsPath)
       .filter(asset => asset !== '.DS_Store')
@@ -162,7 +162,7 @@ StyleDictionary.registerAction({
           .convert(result.data, svgConverterOptions)
           .then(cleanedSvg =>
             fs.outputFileSync(
-              path.join(config.buildPath, `ui_${_.snakeCase(asset.name)}.xml`),
+              path.join(config.buildPath, `${_.snakeCase(asset.name)}.xml`),
               cleanedSvg
             )
           )
@@ -180,7 +180,7 @@ StyleDictionary.registerAction({
   name: 'copy_icons_web',
   do() {
     log('Copying icons directory');
-    const assetsPath = path.join(__dirname, 'assets/icons/svg');
+    const assetsPath = path.join(__dirname, 'assets/icons');
     const assetPathArr = fs
       .readdirSync(assetsPath)
       // remove garbage hack
@@ -191,7 +191,7 @@ StyleDictionary.registerAction({
     assetPathArr.forEach(asset => {
       const svg = fs.readFileSync(path.join(assetsPath, asset), 'utf8');
       svgo.optimize(svg).then(result => {
-        fs.outputFileSync(path.join('build/web/icons/svg', asset), result.data);
+        fs.outputFileSync(path.join('build/web/icons', asset), result.data);
       });
     });
   },
