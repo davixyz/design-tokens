@@ -10,9 +10,6 @@ Object {
         },
       },
       "default": Object {
-        "border-radius": Object {
-          "value": "50",
-        },
         "border-width": Object {
           "value": "1",
         },
@@ -20,41 +17,23 @@ Object {
     },
     "lg": Object {
       "height": Object {
-        "attributes": Object {
-          "component": true,
-        },
         "value": "48",
       },
       "padding-x": Object {
-        "attributes": Object {
-          "component": true,
-        },
         "value": "24",
       },
       "padding-y": Object {
-        "attributes": Object {
-          "component": true,
-        },
         "value": "12",
       },
     },
     "md": Object {
       "height": Object {
-        "attributes": Object {
-          "component": true,
-        },
         "value": "36",
       },
       "padding-x": Object {
-        "attributes": Object {
-          "component": true,
-        },
         "value": "18",
       },
       "padding-y": Object {
-        "attributes": Object {
-          "component": true,
-        },
         "value": "9",
       },
     },
@@ -70,31 +49,6 @@ Object {
         },
         "text-color": Object {
           "value": "{color.white.value}",
-        },
-      },
-    },
-    "primary-full": Object {
-      "active": Object {
-        "background-color": Object {
-          "value": "{color.blue.800.value}",
-        },
-      },
-      "default": Object {
-        "background-color": Object {
-          "value": "{color.blue.600.value}",
-        },
-        "text-color": Object {
-          "value": "{color.white.value}",
-        },
-      },
-      "lg": Object {
-        "height": Object {
-          "value": "56",
-        },
-      },
-      "md": Object {
-        "height": Object {
-          "value": "48",
         },
       },
     },
@@ -152,250 +106,97 @@ Object {
     },
     "sm": Object {
       "height": Object {
-        "attributes": Object {
-          "component": true,
-        },
         "value": "30",
       },
       "padding-x": Object {
-        "attributes": Object {
-          "component": true,
-        },
         "value": "15",
       },
       "padding-y": Object {
-        "attributes": Object {
-          "component": true,
-        },
         "value": "6",
       },
     },
   },
   "color": Object {
     "black": Object {
-      "attributes": Object {
-        "base": true,
-      },
       "value": "#000000",
     },
     "blue": Object {
       "100": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#F5FBFE",
+        "value": "#bbdefb",
       },
       "200": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#E4F1FB",
+        "value": "#90caf9",
       },
       "300": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#BFDBEE",
+        "value": "#64b5f6",
       },
       "400": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#50C7F9",
+        "value": "#42a5f5",
       },
       "500": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#009CDE",
+        "value": "#2196f3",
       },
       "600": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#0070BA",
+        "value": "#1e88e5",
       },
       "700": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#005EA6",
+        "value": "#1976d2",
       },
       "800": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#003087",
-      },
-    },
-    "green": Object {
-      "100": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#F5FDFB",
-      },
-      "500": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#00CF92",
-      },
-      "600": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#299976",
-      },
-      "700": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#018065",
+        "value": "#1565c0",
       },
     },
     "grey": Object {
       "100": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#F5F7FA",
+        "value": "#f5f5f5",
       },
       "200": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#EAECED",
+        "value": "#eeeeee",
       },
       "300": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#CBD2D6",
+        "value": "#e0e0e0",
       },
       "400": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#B7BCBF",
+        "value": "#bdbdbd",
       },
       "500": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#9DA3A6",
+        "value": "#9e9e9e",
       },
       "600": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#687173",
+        "value": "#757575",
       },
       "700": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#2C2E2F",
-      },
-    },
-    "orange": Object {
-      "100": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#FFFBF5",
-      },
-      "300": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#FFBD5D",
-      },
-      "500": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#FF9600",
-      },
-      "700": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#D64003",
-      },
-    },
-    "pink": Object {
-      "500": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#DE0063",
-      },
-    },
-    "purple": Object {
-      "500": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#640487",
-      },
-    },
-    "red": Object {
-      "100": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#FFF7F7",
-      },
-      "500": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "#D20000",
+        "value": "#616161",
       },
     },
     "transparent": Object {
-      "attributes": Object {
-        "base": true,
-      },
       "value": "#00000000",
     },
     "white": Object {
-      "attributes": Object {
-        "base": true,
-      },
       "value": "#FFFFFF",
     },
   },
   "font-family": Object {
-    "big": Object {
+    "primary": Object {
+      "bold": Object {
+        "value": "\\"Roboto-Bold\\"",
+      },
       "light": Object {
-        "value": "\\"PayPalSansBig-Light\\"",
-      },
-      "medium": Object {
-        "value": "\\"PayPalSansBig-Medium\\"",
+        "value": "\\"Roboto-Light\\"",
       },
       "regular": Object {
-        "value": "\\"PayPalSansBig-Regular\\"",
-      },
-    },
-    "small": Object {
-      "medium": Object {
-        "value": "\\"PayPalSansSmall-Medium\\"",
-      },
-      "regular": Object {
-        "value": "\\"PayPalSansSmall-Regular\\"",
+        "value": "\\"Roboto-Regular\\"",
       },
     },
   },
   "font-weight": Object {
-    "1": Object {
+    "300": Object {
       "value": "300",
     },
-    "2": Object {
+    "500": Object {
       "value": "500",
     },
-    "3": Object {
+    "700": Object {
       "value": "700",
     },
   },
@@ -418,11 +219,6 @@ Object {
     "xl": Object {
       "size": Object {
         "value": 40,
-      },
-    },
-    "xl2": Object {
-      "size": Object {
-        "value": 48,
       },
     },
     "xs": Object {
@@ -486,183 +282,58 @@ Object {
   "size": Object {
     "base": Object {
       "100": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "1",
       },
       "1000": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "48",
       },
       "1100": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "56",
       },
       "1200": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "64",
       },
       "1300": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "72",
       },
       "1400": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "84",
       },
       "1500": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "96",
       },
       "200": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "2",
       },
       "300": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "4",
       },
       "400": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "8",
       },
       "500": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "12",
       },
       "600": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "16",
       },
       "700": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "24",
       },
       "800": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "32",
       },
       "900": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "36",
-      },
-    },
-    "text": Object {
-      "lg": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "18",
-      },
-      "md": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "15",
-      },
-      "sm": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "13",
-      },
-      "xl": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "20",
-      },
-      "xl2": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "24",
-      },
-      "xl3": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "30",
-      },
-      "xl4": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "40",
-      },
-      "xl5": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "50",
-      },
-      "xl6": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "60",
-      },
-      "xl7": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "72",
-      },
-      "xl8": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "80",
-      },
-      "xs": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "11",
       },
     },
   },
   "spacing": Object {
     "base": Object {
       "100": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "1",
       },
       "200": Object {
-        "attributes": Object {
-          "base": true,
-        },
         "value": "2",
       },
     },
@@ -700,184 +371,12 @@ Object {
         "value": "1.5",
       },
     },
-    "xl2": Object {
-      "font-size": Object {
-        "value": "24",
-      },
-      "line-height": Object {
-        "value": "1.5",
-      },
-    },
-    "xl3": Object {
-      "font-size": Object {
-        "value": "30",
-      },
-      "line-height": Object {
-        "value": "1.2",
-      },
-    },
-    "xl4": Object {
-      "font-size": Object {
-        "value": "40",
-      },
-      "line-height": Object {
-        "value": "1.2",
-      },
-    },
-    "xl5": Object {
-      "font-size": Object {
-        "value": "50",
-      },
-      "line-height": Object {
-        "value": "1.2",
-      },
-    },
-    "xl6": Object {
-      "font-size": Object {
-        "value": "60",
-      },
-      "line-height": Object {
-        "value": "1.2",
-      },
-    },
-    "xl7": Object {
-      "font-size": Object {
-        "value": "72",
-      },
-      "line-height": Object {
-        "value": "1.16",
-      },
-    },
-    "xl8": Object {
-      "font-size": Object {
-        "value": "80",
-      },
-      "line-height": Object {
-        "value": "1.2",
-      },
-    },
     "xs": Object {
       "font-size": Object {
         "value": "11",
       },
       "line-height": Object {
         "value": "1.36",
-      },
-    },
-  },
-  "time": Object {
-    "base": Object {
-      "100": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "100",
-      },
-      "1000": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "1000",
-      },
-      "200": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "200",
-      },
-      "300": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "300",
-      },
-      "400": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "400",
-      },
-      "500": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "500",
-      },
-      "600": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "600",
-      },
-      "700": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "700",
-      },
-      "800": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "800",
-      },
-      "900": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "900",
-      },
-    },
-    "delay": Object {
-      "long": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "1000",
-      },
-      "medium": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "500",
-      },
-      "none": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "0",
-      },
-      "short": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "200",
-      },
-    },
-    "duration": Object {
-      "instant": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "0",
-      },
-      "long": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "300",
-      },
-      "medium": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "200",
-      },
-      "short": Object {
-        "attributes": Object {
-          "base": true,
-        },
-        "value": "100",
       },
     },
   },
