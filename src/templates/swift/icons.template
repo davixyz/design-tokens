@@ -1,0 +1,55 @@
+//
+//  Do not edit directly this is automatically generated
+//
+import UIKit
+<%
+
+  var imageDefinition = data.map(iconName => {
+    return `  public static let ${iconName}:UIImage = UIImage.image(for: "${iconName}")`;
+  }).join('\n');
+
+  var iconImageEnumCases = data.map(iconName => {
+    return `    case ${iconName}`;
+  }).join('\n');
+
+  var iconImageSwitchCases = data.map(iconName => {
+    return `           case .${iconName}:
+              return Image.${iconName}`;
+  }).join('\n');
+
+
+  var allIcons = data.map(iconName => {
+    return `  ${iconName},`;
+  }).join('\n');
+
+  var allIconsNames = data.map(iconName => {
+    return `  "${iconName}",`;
+  }).join('\n');
+%>
+
+public enum IconImage: String, CaseIterable
+{
+<%= iconImageEnumCases %>
+
+  public var image: UIImage
+  {
+      switch self
+      {
+<%= iconImageSwitchCases %>
+      }
+  }
+}
+
+public class Image
+{
+<%= imageDefinition %>
+
+#if DEBUG
+public static let allIcons: [UIImage] = [
+<%= allIcons %>
+]
+public static let allIconsNames: [String] = [
+<%= allIconsNames %>
+]
+#endif
+}

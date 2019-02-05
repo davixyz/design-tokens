@@ -1,0 +1,15 @@
+{
+  "font-family": {
+    "primary": {
+      "bold": {
+        "value": "\"Roboto-Bold\""
+      },
+      "regular": {
+        "value": "\"Roboto-Regular\""
+      },
+      "light": {
+        "value": "\"Roboto-Light\""
+      }
+    }
+  }
+}

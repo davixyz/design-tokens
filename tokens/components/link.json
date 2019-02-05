@@ -1,0 +1,54 @@
+{
+  "link": {
+    "primary": {
+      "default": {
+        "text-color": {
+          "value": "{color.blue.600.value}",
+          "metadata": {
+            "filter": {
+              "ios": false,
+              "android": false
+            }
+          }
+        }
+      },
+      "active": {
+        "text-color": {
+          "value": "{color.blue.800.value}",
+          "metadata": {
+            "filter": {
+              "ios": false,
+              "android": false
+            }
+          }
+        }
+      }
+    },
+    "primary-inverse": {
+      "default": {
+        "text-color": {
+          "value": "{color.white.value}",
+          "metadata": {
+            "filter": {
+              "ios": false,
+              "android": false
+            }
+          }
+        }
+      }
+    },
+    "secondary": {
+      "default": {
+        "text-color": {
+          "value": "{color.grey.700.value}",
+          "metadata": {
+            "filter": {
+              "ios": false,
+              "android": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

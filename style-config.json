@@ -1,0 +1,62 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "web": {
+      "transformGroup": "web-custom",
+      "buildPath": "build/web/",
+      "files": [
+        {
+          "destination": "less/variables.less",
+          "format": "less/variables",
+          "options": {
+            "showFileHeader": false
+          }
+        },
+        {
+          "destination": "json/variables.json",
+          "format": "json/nested"
+        }
+      ],
+      "actions": ["copy_icons_web"]
+    },
+    "ios-swift": {
+      "transformGroup": "swift-custom",
+      "buildPath": "build/ios/",
+      "files": [
+        {
+          "destination": "Classes/Tokens.swift",
+          "format": "swift/tokens"
+        }
+      ]
+    },
+    "ios-fonts": {
+      "buildPath": "build/ios/Fonts/",
+      "target": "ios",
+      "actions": ["copy_fonts"]
+    },
+    "ios-icons": {
+      "buildPath": "build/ios/Assets/Icons.xcassets/Icons/",
+      "actions": ["copy_icons_ios"]
+    },
+    "android": {
+      "transformGroup": "android-custom",
+      "buildPath": "build/android/app/src/main/res/",
+      "files": [
+        {
+          "destination": "values/tokens.xml",
+          "format": "android/tokens"
+        }
+      ]
+    },
+    "android-fonts": {
+      "buildPath": "build/android/app/src/main/res/font/",
+      "target": "android",
+      "actions": ["copy_fonts"]
+    },
+    "android-icons": {
+      "buildPath": "build/android/app/src/main/res/drawable/",
+      "target": "android",
+      "actions": ["copy_icons_android"]
+    }
+  }
+}

@@ -1,0 +1,106 @@
+//
+//  Do not edit directly this is automatically generated
+//
+import UIKit
+<%
+  allProperties = allProperties.filter((token) => {
+    if(token.metadata && token.metadata.filter && !token.metadata.filter.ios) {
+      return false;
+    }
+    return true;
+  });
+  var baseTokens = allProperties.map(prop => {
+    if(prop.attributes.category === 'color') {
+      return `  public static let ${prop.name} = ${prop.value}`;
+    }
+    if(prop.attributes.category === 'size' || prop.attributes.category === 'spacing') {
+      return `  public static let ${prop.name}: CGFloat = ${prop.value}`;
+    }
+    if(prop.attributes.category === 'time') {
+      return `  public static let ${prop.name}: TimeInterval = ${prop.value}`;
+    }
+    if(prop.attributes.category === 'font-family') {
+      return `  public static let ${prop.name}: String = ${prop.value}`;
+    }
+    return;
+  }).join('\n');
+
+  var colorTokens = allProperties
+    .filter(prop => prop.attributes.category === 'color' && prop.attributes.base)
+    .map(prop => {
+      return `    ${prop.name},`
+    }).join('\n');
+
+%>
+public struct BaseTokens
+{
+<%= baseTokens %>
+#if DEBUG
+  public static let allColors: [UIColor] = [
+<%= colorTokens %>
+  ]
+#endif
+}
+
+<%
+  var tokensProtocol = allProperties.map(prop => {
+    if(prop.attributes.category === 'color') {
+      return `  func ${prop.name}() -> UIColor`;
+    }
+    if(prop.attributes.category === 'size' || prop.attributes.category === 'spacing') {
+      return `  func ${prop.name}() -> CGFloat`;
+    }
+    if(prop.attributes.category === 'time') {
+      return `  func ${prop.name}() -> TimeInterval`;
+    }
+    if(prop.attributes.category === 'font-family') {
+      return `  func ${prop.name}() -> String`;
+    }
+
+    return;
+  }).join('\n');
+%>
+
+@objc public protocol Tokens
+{
+<%= tokensProtocol %>
+}
+
+<%
+  var extensionTokens = allProperties.map(prop => {
+    if(prop.attributes.category === 'color') {
+      return `  open func ${prop.name}() -> UIColor
+  {
+    return BaseTokens.${prop.name}
+  }`
+    }
+    if(prop.attributes.category === 'size' || prop.attributes.category === 'spacing') {
+      return `  open func ${prop.name}() -> CGFloat
+  {
+    return BaseTokens.${prop.name}
+  }`
+    }
+    if(prop.attributes.category === 'time') {
+      return `  open func ${prop.name}() -> TimeInterval
+  {
+    return BaseTokens.${prop.name}
+  }`
+    }
+    if(prop.attributes.category === 'font-family') {
+      return `  open func ${prop.name}() -> String
+  {
+    return BaseTokens.${prop.name}
+  }`;
+    }
+
+      return;
+  }).join('\n');
+%>
+
+@objcMembers open class TokensDefault: Tokens
+{
+  public init() {}
+<%= extensionTokens %>
+}
+
+

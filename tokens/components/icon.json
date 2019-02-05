@@ -1,0 +1,29 @@
+{
+  "icon": {
+    "xs": {
+      "size": {
+        "value": 18
+      }
+    },
+    "sm": {
+      "size": {
+        "value": 24
+      }
+    },
+    "md": {
+      "size": {
+        "value": 30
+      }
+    },
+    "lg": {
+      "size": {
+        "value": 36
+      }
+    },
+    "xl": {
+      "size": {
+        "value": 40
+      }
+    }
+  }
+}

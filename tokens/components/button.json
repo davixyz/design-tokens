@@ -1,0 +1,116 @@
+{
+  "button": {
+    "base": {
+      "default": {
+        "border-width": {
+          "value": "1"
+        }
+      },
+      "active": {
+        "border-width": {
+          "value": "2"
+        }
+      }
+    },
+    "primary": {
+      "default": {
+        "background-color": {
+          "value": "{color.blue.600.value}"
+        },
+        "text-color": {
+          "value": "{color.white.value}"
+        }
+      },
+      "active": {
+        "background-color": {
+          "value": "{color.blue.800.value}"
+        }
+      }
+    },
+    "primary-inverse": {
+      "default": {
+        "background-color": {
+          "value": "{color.white.value}"
+        },
+        "text-color": {
+          "value": "{color.blue.600.value}"
+        }
+      },
+      "active": {
+        "text-color": {
+          "value": "{color.blue.800.value}"
+        },
+        "background-color": {
+          "value": "{color.grey.100.value}"
+        }
+      }
+    },
+    "secondary": {
+      "default": {
+        "background-color": {
+          "value": "{color.transparent.value}"
+        },
+        "border-color": {
+          "value": "{color.blue.600.value}"
+        },
+        "text-color": {
+          "value": "{color.blue.600.value}"
+        }
+      },
+      "active": {
+        "border-color": {
+          "value": "{color.blue.800.value}"
+        },
+        "text-color": {
+          "value": "{color.blue.800.value}"
+        }
+      }
+    },
+    "secondary-inverse": {
+      "default": {
+        "background-color": {
+          "value": "{color.transparent.value}"
+        },
+        "border-color": {
+          "value": "{color.white.value}"
+        },
+        "text-color": {
+          "value": "{color.white.value}"
+        }
+      }
+    },
+    "lg": {
+      "height": {
+        "value": "48"
+      },
+      "padding-x": {
+        "value": "24"
+      },
+      "padding-y": {
+        "value": "12"
+      }
+    },
+    "md": {
+      "height": {
+        "value": "36"
+      },
+      "padding-x": {
+        "value": "18"
+      },
+      "padding-y": {
+        "value": "9"
+      }
+    },
+    "sm": {
+      "height": {
+        "value": "30"
+      },
+      "padding-x": {
+        "value": "15"
+      },
+      "padding-y": {
+        "value": "6"
+      }
+    }
+  }
+}

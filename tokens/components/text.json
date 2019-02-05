@@ -1,0 +1,44 @@
+{
+  "text": {
+    "xs": {
+      "font-size": {
+        "value": "11"
+      },
+      "line-height": {
+        "value": "1.36"
+      }
+    },
+    "sm": {
+      "font-size": {
+        "value": "13"
+      },
+      "line-height": {
+        "value": "1.38"
+      }
+    },
+    "md": {
+      "font-size": {
+        "value": "15"
+      },
+      "line-height": {
+        "value": "1.6"
+      }
+    },
+    "lg": {
+      "font-size": {
+        "value": "18"
+      },
+      "line-height": {
+        "value": "1.33"
+      }
+    },
+    "xl": {
+      "font-size": {
+        "value": "20"
+      },
+      "line-height": {
+        "value": "1.5"
+      }
+    }
+  }
+}

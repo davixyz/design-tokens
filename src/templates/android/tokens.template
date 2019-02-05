@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<%
+//  Filter by base tokens
+  allProperties = allProperties.filter((token) => {
+    if(token.metadata && token.metadata.filter && !token.metadata.filter.ios) {
+      return false;
+    }
+    return true;
+  });
+  var tokens = allProperties.map(prop => {
+    if(prop.attributes.category === 'color') {
+      return `  <color name="${prop.name}">${prop.value}</color>`
+    }
+    if(prop.attributes.category === 'size' || prop.attributes.category === 'spacing') {
+      return `  <dimen name="${prop.name}">${prop.value}</dimen>`
+    }
+    if(prop.attributes.category === 'time') {
+      return `  <integer name="${prop.name}">${prop.value}</integer>`
+    }
+    if(prop.attributes.category === 'font-family') {
+      return `  <string name="${prop.name}">${prop.value.replace(/"/g,'')}</string>`
+    }
+    return;
+  }).join('\n');
+
+%>
+<resources>
+<%= tokens %>
+</resources>
