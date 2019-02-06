@@ -29,6 +29,11 @@ public struct BaseTokens
 
 
 
+  public static let lineHeightBase100: CGFloat = 1.33
+  public static let lineHeightBase200: CGFloat = 1.36
+  public static let lineHeightBase300: CGFloat = 1.38
+  public static let lineHeightBase400: CGFloat = 1.5
+  public static let lineHeightBase500: CGFloat = 1.6
   public static let sizeBase100: CGFloat = 1.00
   public static let sizeBase200: CGFloat = 2.00
   public static let sizeBase300: CGFloat = 4.00
@@ -67,24 +72,24 @@ public struct BaseTokens
   public static let buttonLgPaddingX: CGFloat = 24.00
   public static let buttonLgPaddingY: CGFloat = 12.00
   public static let buttonMdHeight: CGFloat = 36.00
-  public static let buttonMdPaddingX: CGFloat = 18.00
-  public static let buttonMdPaddingY: CGFloat = 9.00
-  public static let buttonSmHeight: CGFloat = 30.00
-  public static let buttonSmPaddingX: CGFloat = 15.00
-  public static let buttonSmPaddingY: CGFloat = 6.00
-  public static let iconXsSize: CGFloat = 18.00
+  public static let buttonMdPaddingX: CGFloat = 16.00
+  public static let buttonMdPaddingY: CGFloat = 8.00
+  public static let buttonSmHeight: CGFloat = 32.00
+  public static let buttonSmPaddingX: CGFloat = 16.00
+  public static let buttonSmPaddingY: CGFloat = 8.00
+  public static let iconXsSize: CGFloat = 16.00
   public static let iconSmSize: CGFloat = 24.00
-  public static let iconMdSize: CGFloat = 30.00
+  public static let iconMdSize: CGFloat = 32.00
   public static let iconLgSize: CGFloat = 36.00
-  public static let iconXlSize: CGFloat = 40.00
-  public static let textXsFontSize: CGFloat = 11.00
-  public static let textXsLineHeight: CGFloat = 1.36
-  public static let textSmFontSize: CGFloat = 13.00
-  public static let textSmLineHeight: CGFloat = 1.38
-  public static let textMdFontSize: CGFloat = 15.00
-  public static let textMdLineHeight: CGFloat = 1.60
-  public static let textLgFontSize: CGFloat = 18.00
-  public static let textLgLineHeight: CGFloat = 1.33
-  public static let textXlFontSize: CGFloat = 20.00
-  public static let textXlLineHeight: CGFloat = 1.50
+  public static let iconXlSize: CGFloat = 48.00
+  public static let textXsFontSize: CGFloat = 12.00
+  public static let textXsLineHeight: CGFloat = 1.33
+  public static let textSmFontSize: CGFloat = 16.00
+  public static let textSmLineHeight: CGFloat = 1.36
+  public static let textMdFontSize: CGFloat = 24.00
+  public static let textMdLineHeight: CGFloat = 1.38
+  public static let textLgFontSize: CGFloat = 32.00
+  public static let textLgLineHeight: CGFloat = 1.5
+  public static let textXlFontSize: CGFloat = 36.00
+  public static let textXlLineHeight: CGFloat = 1.6
 }

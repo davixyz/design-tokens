@@ -25,6 +25,11 @@
 
 
 
+
+
+
+
+
   <dimen name="size_base_100">1dp</dimen>
   <dimen name="size_base_200">2dp</dimen>
   <dimen name="size_base_300">4dp</dimen>
@@ -63,24 +68,24 @@
   <dimen name="button_lg_padding_x">24dp</dimen>
   <dimen name="button_lg_padding_y">12dp</dimen>
   <dimen name="button_md_height">36dp</dimen>
-  <dimen name="button_md_padding_x">18dp</dimen>
-  <dimen name="button_md_padding_y">9dp</dimen>
-  <dimen name="button_sm_height">30dp</dimen>
-  <dimen name="button_sm_padding_x">15dp</dimen>
-  <dimen name="button_sm_padding_y">6dp</dimen>
-  <dimen name="icon_xs_size">18dp</dimen>
+  <dimen name="button_md_padding_x">16dp</dimen>
+  <dimen name="button_md_padding_y">8dp</dimen>
+  <dimen name="button_sm_height">32dp</dimen>
+  <dimen name="button_sm_padding_x">16dp</dimen>
+  <dimen name="button_sm_padding_y">8dp</dimen>
+  <dimen name="icon_xs_size">16dp</dimen>
   <dimen name="icon_sm_size">24dp</dimen>
-  <dimen name="icon_md_size">30dp</dimen>
+  <dimen name="icon_md_size">32dp</dimen>
   <dimen name="icon_lg_size">36dp</dimen>
-  <dimen name="icon_xl_size">40dp</dimen>
-  <dimen name="text_xs_font_size">11sp</dimen>
-  <dimen name="text_xs_line_height">1.36</dimen>
-  <dimen name="text_sm_font_size">13sp</dimen>
-  <dimen name="text_sm_line_height">1.38</dimen>
-  <dimen name="text_md_font_size">15sp</dimen>
-  <dimen name="text_md_line_height">1.6</dimen>
-  <dimen name="text_lg_font_size">18sp</dimen>
-  <dimen name="text_lg_line_height">1.33</dimen>
-  <dimen name="text_xl_font_size">20sp</dimen>
-  <dimen name="text_xl_line_height">1.5</dimen>
+  <dimen name="icon_xl_size">48dp</dimen>
+  <dimen name="text_xs_font_size">12dp</dimen>
+  <dimen name="text_xs_line_height">1.33</dimen>
+  <dimen name="text_sm_font_size">16dp</dimen>
+  <dimen name="text_sm_line_height">1.36</dimen>
+  <dimen name="text_md_font_size">24dp</dimen>
+  <dimen name="text_md_line_height">1.38</dimen>
+  <dimen name="text_lg_font_size">32dp</dimen>
+  <dimen name="text_lg_line_height">1.5</dimen>
+  <dimen name="text_xl_font_size">36dp</dimen>
+  <dimen name="text_xl_line_height">1.6</dimen>
 </resources>

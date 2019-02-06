@@ -3,12 +3,12 @@
     "base": {
       "default": {
         "border-width": {
-          "value": "1"
+          "value": "{spacing.base.100.value}"
         }
       },
       "active": {
         "border-width": {
-          "value": "2"
+          "value": "{spacing.base.200.value}"
         }
       }
     },
@@ -81,35 +81,35 @@
     },
     "lg": {
       "height": {
-        "value": "48"
+        "value": "{size.base.1000.value}"
       },
       "padding-x": {
-        "value": "24"
+        "value": "{size.base.700.value}"
       },
       "padding-y": {
-        "value": "12"
+        "value": "{size.base.500.value}"
       }
     },
     "md": {
       "height": {
-        "value": "36"
+        "value": "{size.base.900.value}"
       },
       "padding-x": {
-        "value": "18"
+        "value": "{size.base.600.value}"
       },
       "padding-y": {
-        "value": "9"
+        "value": "{size.base.400.value}"
       }
     },
     "sm": {
       "height": {
-        "value": "30"
+        "value": "{size.base.800.value}"
       },
       "padding-x": {
-        "value": "15"
+        "value": "{size.base.600.value}"
       },
       "padding-y": {
-        "value": "6"
+        "value": "{size.base.400.value}"
       }
     }
   }

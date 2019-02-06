@@ -2,27 +2,27 @@
   "icon": {
     "xs": {
       "size": {
-        "value": 18
+        "value": "{size.base.600.value}"
       }
     },
     "sm": {
       "size": {
-        "value": 24
+        "value": "{size.base.700.value}"
       }
     },
     "md": {
       "size": {
-        "value": 30
+        "value": "{size.base.800.value}"
       }
     },
     "lg": {
       "size": {
-        "value": 36
+        "value": "{size.base.900.value}"
       }
     },
     "xl": {
       "size": {
-        "value": 40
+        "value": "{size.base.1000.value}"
       }
     }
   }

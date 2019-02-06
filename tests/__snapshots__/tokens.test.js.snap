@@ -6,35 +6,35 @@ Object {
     "base": Object {
       "active": Object {
         "border-width": Object {
-          "value": "2",
+          "value": "{spacing.base.200.value}",
         },
       },
       "default": Object {
         "border-width": Object {
-          "value": "1",
+          "value": "{spacing.base.100.value}",
         },
       },
     },
     "lg": Object {
       "height": Object {
-        "value": "48",
+        "value": "{size.base.1000.value}",
       },
       "padding-x": Object {
-        "value": "24",
+        "value": "{size.base.700.value}",
       },
       "padding-y": Object {
-        "value": "12",
+        "value": "{size.base.500.value}",
       },
     },
     "md": Object {
       "height": Object {
-        "value": "36",
+        "value": "{size.base.900.value}",
       },
       "padding-x": Object {
-        "value": "18",
+        "value": "{size.base.600.value}",
       },
       "padding-y": Object {
-        "value": "9",
+        "value": "{size.base.400.value}",
       },
     },
     "primary": Object {
@@ -106,13 +106,13 @@ Object {
     },
     "sm": Object {
       "height": Object {
-        "value": "30",
+        "value": "{size.base.800.value}",
       },
       "padding-x": Object {
-        "value": "15",
+        "value": "{size.base.600.value}",
       },
       "padding-y": Object {
-        "value": "6",
+        "value": "{size.base.400.value}",
       },
     },
   },
@@ -203,27 +203,46 @@ Object {
   "icon": Object {
     "lg": Object {
       "size": Object {
-        "value": 36,
+        "value": "{size.base.900.value}",
       },
     },
     "md": Object {
       "size": Object {
-        "value": 30,
+        "value": "{size.base.800.value}",
       },
     },
     "sm": Object {
       "size": Object {
-        "value": 24,
+        "value": "{size.base.700.value}",
       },
     },
     "xl": Object {
       "size": Object {
-        "value": 40,
+        "value": "{size.base.1000.value}",
       },
     },
     "xs": Object {
       "size": Object {
-        "value": 18,
+        "value": "{size.base.600.value}",
+      },
+    },
+  },
+  "line-height": Object {
+    "base": Object {
+      "100": Object {
+        "value": "1.33",
+      },
+      "200": Object {
+        "value": "1.36",
+      },
+      "300": Object {
+        "value": "1.38",
+      },
+      "400": Object {
+        "value": "1.5",
+      },
+      "500": Object {
+        "value": "1.6",
       },
     },
   },
@@ -341,42 +360,42 @@ Object {
   "text": Object {
     "lg": Object {
       "font-size": Object {
-        "value": "18",
+        "value": "{size.base.800.value}",
       },
       "line-height": Object {
-        "value": "1.33",
+        "value": "{line-height.base.400.value}",
       },
     },
     "md": Object {
       "font-size": Object {
-        "value": "15",
+        "value": "{size.base.700.value}",
       },
       "line-height": Object {
-        "value": "1.6",
+        "value": "{line-height.base.300.value}",
       },
     },
     "sm": Object {
       "font-size": Object {
-        "value": "13",
+        "value": "{size.base.600.value}",
       },
       "line-height": Object {
-        "value": "1.38",
+        "value": "{line-height.base.200.value}",
       },
     },
     "xl": Object {
       "font-size": Object {
-        "value": "20",
+        "value": "{size.base.900.value}",
       },
       "line-height": Object {
-        "value": "1.5",
+        "value": "{line-height.base.500.value}",
       },
     },
     "xs": Object {
       "font-size": Object {
-        "value": "11",
+        "value": "{size.base.500.value}",
       },
       "line-height": Object {
-        "value": "1.36",
+        "value": "{line-height.base.100.value}",
       },
     },
   },

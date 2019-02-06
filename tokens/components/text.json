@@ -2,42 +2,42 @@
   "text": {
     "xs": {
       "font-size": {
-        "value": "11"
+        "value": "{size.base.500.value}"
       },
       "line-height": {
-        "value": "1.36"
+        "value": "{line-height.base.100.value}"
       }
     },
     "sm": {
       "font-size": {
-        "value": "13"
+        "value": "{size.base.600.value}"
       },
       "line-height": {
-        "value": "1.38"
+        "value": "{line-height.base.200.value}"
       }
     },
     "md": {
       "font-size": {
-        "value": "15"
+        "value": "{size.base.700.value}"
       },
       "line-height": {
-        "value": "1.6"
+        "value": "{line-height.base.300.value}"
       }
     },
     "lg": {
       "font-size": {
-        "value": "18"
+        "value": "{size.base.800.value}"
       },
       "line-height": {
-        "value": "1.33"
+        "value": "{line-height.base.400.value}"
       }
     },
     "xl": {
       "font-size": {
-        "value": "20"
+        "value": "{size.base.900.value}"
       },
       "line-height": {
-        "value": "1.5"
+        "value": "{line-height.base.500.value}"
       }
     }
   }

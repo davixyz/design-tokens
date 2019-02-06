@@ -35,6 +35,15 @@
     "500": "500",
     "700": "700"
   },
+  "line-height": {
+    "base": {
+      "100": "1.33",
+      "200": "1.36",
+      "300": "1.38",
+      "400": "1.5",
+      "500": "1.6"
+    }
+  },
   "size": {
     "base": {
       "100": "0.0625rem",
@@ -113,30 +122,30 @@
     },
     "md": {
       "height": "2.25rem",
-      "padding-x": "1.125rem",
-      "padding-y": "0.5625rem"
+      "padding-x": "1rem",
+      "padding-y": "0.5rem"
     },
     "sm": {
-      "height": "1.875rem",
-      "padding-x": "0.9375rem",
-      "padding-y": "0.375rem"
+      "height": "2rem",
+      "padding-x": "1rem",
+      "padding-y": "0.5rem"
     }
   },
   "icon": {
     "xs": {
-      "size": "1.125rem"
+      "size": "1rem"
     },
     "sm": {
       "size": "1.5rem"
     },
     "md": {
-      "size": "1.875rem"
+      "size": "2rem"
     },
     "lg": {
       "size": "2.25rem"
     },
     "xl": {
-      "size": "2.5rem"
+      "size": "3rem"
     }
   },
   "link": {
@@ -161,24 +170,24 @@
   },
   "text": {
     "xs": {
-      "font-size": "0.6875rem",
-      "line-height": "1.36"
-    },
-    "sm": {
-      "font-size": "0.8125rem",
-      "line-height": "1.38"
-    },
-    "md": {
-      "font-size": "0.9375rem",
-      "line-height": "1.6"
-    },
-    "lg": {
-      "font-size": "1.125rem",
+      "font-size": "0.75rem",
       "line-height": "1.33"
     },
-    "xl": {
-      "font-size": "1.25rem",
+    "sm": {
+      "font-size": "1rem",
+      "line-height": "1.36"
+    },
+    "md": {
+      "font-size": "1.5rem",
+      "line-height": "1.38"
+    },
+    "lg": {
+      "font-size": "2rem",
       "line-height": "1.5"
+    },
+    "xl": {
+      "font-size": "2.25rem",
+      "line-height": "1.6"
     }
   }
 }

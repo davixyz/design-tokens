@@ -13,7 +13,7 @@ import UIKit
     if(prop.attributes.category === 'color') {
       return `  public static let ${prop.name} = ${prop.value}`;
     }
-    if(prop.attributes.category === 'size' || prop.attributes.category === 'spacing') {
+    if(prop.attributes.category === 'size' || prop.attributes.category === 'spacing' || prop.attributes.category === 'line-height') {
       return `  public static let ${prop.name}: CGFloat = ${prop.value}`;
     }
     if(prop.attributes.category === 'time') {
