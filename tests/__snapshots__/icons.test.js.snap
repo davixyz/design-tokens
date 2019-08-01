@@ -3,12 +3,10 @@
 exports[`icons  snapshot should be matched 1`] = `
 Array [
   "delete.svg",
-  "edit.svg",
   "restart.svg",
   "search.svg",
-  "settings.svg",
   "trash.svg",
 ]
 `;
 
-exports[`icons  snapshot should be matched 2`] = `6`;
+exports[`icons  snapshot should be matched 2`] = `4`;
