@@ -3,7 +3,7 @@
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": ["error"],
-    "import/no-extraneous-dependencies": false
+    "import/no-extraneous-dependencies": 0
   },
   "env": {
     "jest": true

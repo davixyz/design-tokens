@@ -8,7 +8,7 @@ const _ = require('lodash');
 const SVGO = require('svgo');
 
 // Android SVG to XML Converter
-const svgsus = require('svgsus');
+const svg2vectordrawable = require('svg2vectordrawable');
 
 // iOS SVG to PDF Converters
 const PDFDocument = require('pdfkit');
@@ -153,21 +153,18 @@ StyleDictionary.registerAction({
       ],
     });
 
-    const svgConverterOptions = { compressed: true, codeIndent: '  ' };
-
-    assetPathArr.forEach(asset => {
+    assetPathArr.forEach(async asset => {
       const svg = fs.readFileSync(asset.path, 'utf8');
-      svgo.optimize(svg).then(result => {
-        svgsus.vectordrawable
-          .convert(result.data, svgConverterOptions)
-          .then(cleanedSvg =>
-            fs.outputFileSync(
-              path.join(config.buildPath, `${_.snakeCase(asset.name)}.xml`),
-              cleanedSvg
-            )
-          )
-          .catch(err => log(err));
-      });
+      try {
+        const { data } = await svgo.optimize(svg);
+        const xmlCode = await svg2vectordrawable(data);
+        fs.outputFileSync(
+          path.join(config.buildPath, `${_.snakeCase(asset.name)}.xml`),
+          xmlCode
+        );
+      } catch (err) {
+        log(err);
+      }
     });
   },
   undo(dictionary, config) {
@@ -188,11 +185,14 @@ StyleDictionary.registerAction({
     const svgo = new SVGO({
       plugins: [{ removeDimensions: true }, { removeViewBox: false }],
     });
-    assetPathArr.forEach(asset => {
+    assetPathArr.forEach(async asset => {
       const svg = fs.readFileSync(path.join(assetsPath, asset), 'utf8');
-      svgo.optimize(svg).then(result => {
-        fs.outputFileSync(path.join('build/web/icons', asset), result.data);
-      });
+      try {
+        const { data } = await svgo.optimize(svg);
+        fs.outputFileSync(path.join('build/web/icons', asset), data);
+      } catch (err) {
+        log(err);
+      }
     });
   },
   undo(dictionary, config) {
