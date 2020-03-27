@@ -22,9 +22,9 @@ StyleDictionary.registerAction({
     const assetPathArr = fs
       .readdirSync(fontsPath)
       // remove garbage hack
-      .filter(asset => asset !== '.DS_Store');
+      .filter((asset) => asset !== '.DS_Store');
     fs.ensureDirSync(config.buildPath);
-    assetPathArr.forEach(asset => {
+    assetPathArr.forEach((asset) => {
       let processedAsset = asset;
       // If the target is android we need to
       // process the fileName and make
@@ -52,9 +52,9 @@ StyleDictionary.registerAction({
     const assetPathArr = fs
       .readdirSync(assetsPath)
       // remove garbage hack
-      .filter(asset => asset !== '.DS_Store');
+      .filter((asset) => asset !== '.DS_Store');
     const assetNameArr = [];
-    assetPathArr.forEach(asset => {
+    assetPathArr.forEach((asset) => {
       const assetFullPath = path.join(assetsPath, asset);
       const svg = fs.readFileSync(assetFullPath, 'utf8');
       const assetFullPathParsed = path.parse(assetFullPath);
@@ -120,8 +120,8 @@ StyleDictionary.registerAction({
     const assetsPath = path.join(__dirname, 'assets/icons/');
     const assetPathArr = fs
       .readdirSync(assetsPath)
-      .filter(asset => asset !== '.DS_Store')
-      .map(file => {
+      .filter((asset) => asset !== '.DS_Store')
+      .map((file) => {
         const assetPath = path.join(assetsPath, file);
         const parsedPath = path.parse(assetPath);
         return {
@@ -139,7 +139,7 @@ StyleDictionary.registerAction({
             type: 'perItem',
             name: 'addFill',
             description: 'Adds default color for svgs',
-            fn: item => {
+            fn: (item) => {
               if (item.isElem('svg')) {
                 item.addAttr({
                   name: 'fill="#2C2E2F"',
@@ -153,7 +153,7 @@ StyleDictionary.registerAction({
       ],
     });
 
-    assetPathArr.forEach(async asset => {
+    assetPathArr.forEach(async (asset) => {
       const svg = fs.readFileSync(asset.path, 'utf8');
       try {
         const { data } = await svgo.optimize(svg);
@@ -181,11 +181,11 @@ StyleDictionary.registerAction({
     const assetPathArr = fs
       .readdirSync(assetsPath)
       // remove garbage hack
-      .filter(asset => asset !== '.DS_Store');
+      .filter((asset) => asset !== '.DS_Store');
     const svgo = new SVGO({
       plugins: [{ removeDimensions: true }, { removeViewBox: false }],
     });
-    assetPathArr.forEach(async asset => {
+    assetPathArr.forEach(async (asset) => {
       const svg = fs.readFileSync(path.join(assetsPath, asset), 'utf8');
       try {
         const { data } = await svgo.optimize(svg);
