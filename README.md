@@ -18,13 +18,9 @@ $ npm run build
 
 - [style-dictionary](https://github.com/amzn/style-dictionary)
 
-### Prerequisites
-
-- Node v8.9.4
-
 ### Building
 
-##### Token Changes
+#### Token Changes
 
 Changes need to be done in the JSONs inside `tokens` folder.
 
